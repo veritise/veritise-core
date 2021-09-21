@@ -129,13 +129,13 @@ namespace catapult { namespace process {
 		auto pLoggingGuard = SetupLogging(host, config.Logging);
 
 		// 3. check instance
-		std::filesystem::path lockFilePath = config.User.DataDirectory;
-		lockFilePath /= host + ".lock";
-		io::FileLock instanceLock(lockFilePath.generic_string());
-		if (!instanceLock.try_lock()) {
-			CATAPULT_LOG(fatal) << "could not acquire instance lock " << lockFilePath;
-			return -3;
-		}
+		// std::filesystem::path lockFilePath = config.User.DataDirectory;
+		// lockFilePath /= host + ".lock";
+		// io::FileLock instanceLock(lockFilePath.generic_string());
+		// if (!instanceLock.try_lock()) {
+		// 	CATAPULT_LOG(fatal) << "could not acquire instance lock " << lockFilePath;
+		// 	return -3;
+		// }
 
 		// 4. platform specific settings
 		PlatformSettings();
