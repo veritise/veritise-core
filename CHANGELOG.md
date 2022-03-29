@@ -14,7 +14,7 @@ The changelog format is based on [Keep a Changelog](https://keepachangelog.com/e
 ## [1.0.3.0] - 05-Nov-2021
 
 ### Added
- - new MosaicFlag called Revokable. Inspired by [this idea](https://github.com/symbol/NIP/issues/57)
+ - new MosaicFlag called Revokable
  - new MosaicSupplyRevocationTransaction.
 
 ### Fixed
